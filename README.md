@@ -1,9 +1,9 @@
-Assignment: Create an EC2 Instance and Deploy Nginx
-Objective
+**Assignment: Create an EC2 Instance and Deploy Nginx**
+**Objective**
 
 To learn basic AWS and DevOps concepts by creating an EC2 instance, connecting to it using SSH, installing Nginx, and accessing it via a web browser on port 80.
 
-Prerequisites
+**Prerequisites**
 
 AWS account
 
@@ -11,7 +11,7 @@ Basic knowledge of Linux commands
 
 SSH client (Terminal / Git Bash / PuTTY)
 
-Step 1: Launch an EC2 Instance
+**Step 1: Launch an EC2 Instance**
 
 Log in to AWS Management Console
 
@@ -37,7 +37,7 @@ Allow HTTP (Port 80) – Source: Anywhere (0.0.0.0/0)
 
 Click Launch Instance
 
-Step 2: Connect to EC2 Using SSH
+**Step 2: Connect to EC2 Using SSH**
 
 Copy the Public IPv4 Address of the EC2 instance
 
@@ -49,7 +49,7 @@ ssh -i your-key.pem ec2-user@<public-ip>
 
 ✅ Successfully connected to the EC2 instance
 
-Step 3: Update the Server
+**Step 3: Update the Server**
 sudo yum update -y
 
 Step 4: Install Nginx
@@ -66,7 +66,7 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 
 
-Verify status:
+**Verify status:**
 
 sudo systemctl status nginx
 
@@ -93,9 +93,9 @@ Enter:
 http://<public-ip>
 
 
-✅ Nginx default page is displayed successfully
+**✅ Nginx default page is displayed successfully**
 
-Outcome
+**Outcome**
 
 Successfully launched an EC2 instance
 
@@ -107,7 +107,7 @@ Exposed the application on port 80
 
 Verified access via browser
 
-Tools & Technologies Used
+**Tools & Technologies Used**
 
 AWS EC2
 
@@ -117,6 +117,5 @@ SSH
 
 Nginx
 
-Conclusion
 
 This assignment helped me understand basic AWS infrastructure, Linux server management, and web server deployment. It demonstrates foundational DevOps skills such as cloud provisioning, service configuration, and networking.
